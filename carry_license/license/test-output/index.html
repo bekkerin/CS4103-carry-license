@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">42 methods, 5 failed,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT8	, 19, true, true, false, GRANTED)">test_premium(	TDT8	, 19, true, true, false, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT10	, 19, true, false, false, TEMPORARY)">test_premium(	TDT10	, 19, true, false, false, TEMPORARY)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT15	, 30, true, true, false, GRANTED)">test_premium(	TDT15	, 30, true, true, false, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT21	, 90, true, true, true, DENIED)">test_premium(	TDT21	, 90, true, true, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT19	, 30, false, true, false, GRANTED)">test_premium(	TDT19	, 30, false, true, false, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +136,127 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 80, false, false, false, DENIED)">test_premium(BV, 80, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV6, 80, false, false, false, DENIED)">test_premium(TBV6, 80, false, false, false, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 2147483647, false, false, false, DENIED)">test_premium(BV, 2147483647, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT4	, 15, false, true, true, DENIED)">test_premium(	TDT4	, 15, false, true, true, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, -1, false, false, false, ERROR)">test_premium(BV, -1, false, false, false, ERROR)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT17	, 30, true, false, false, DENIED)">test_premium(	TDT17	, 30, true, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV10, -1, false, false, false, ERROR)">test_premium(TBV10, -1, false, false, false, ERROR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT20	, 30, false, false, true, DENIED)">test_premium(	TDT20	, 30, false, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV4, 20, false, false, false, DENIED)">test_premium(TBV4, 20, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TEP1, 15, true, true, true, DENIED)">test_premium(TEP1, 15, true, true, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT23	, 90, true, false, true, DENIED)">test_premium(	TDT23	, 90, true, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT24	, 90, true, false, false, DENIED)">test_premium(	TDT24	, 90, true, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TEP4, 90, false, false, false, DENIED)">test_premium(TEP4, 90, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV3, 18, false, false, false, DENIED)">test_premium(TBV3, 18, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV7, 81, false, false, false, DENIED)">test_premium(TBV7, 81, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV2, 17, false, false, false, DENIED)">test_premium(TBV2, 17, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT5	, 15, false, true, false, DENIED)">test_premium(	TDT5	, 15, false, true, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV1, 0, true, true, true, DENIED)">test_premium(TBV1, 0, true, true, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT7	, 19, true, true, true, GRANTED)">test_premium(	TDT7	, 19, true, true, true, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT9	, 19, true, false, true, DENIED)">test_premium(	TDT9	, 19, true, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV9, -2147483648, false, false, false, ERROR)">test_premium(TBV9, -2147483648, false, false, false, ERROR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT25	, 90, false, true, true, DENIED)">test_premium(	TDT25	, 90, false, true, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT14	, 30, true, true, true, GRANTED)">test_premium(	TDT14	, 30, true, true, true, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV8, 2147483647, false, false, false, DENIED)">test_premium(TBV8, 2147483647, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT16	, 30, true, false, true, DENIED)">test_premium(	TDT16	, 30, true, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT26	, 90, false, true, false, DENIED)">test_premium(	TDT26	, 90, false, true, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT12	, 19, false, true, false, DENIED)">test_premium(	TDT12	, 19, false, true, false, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT22	, 90, true, true, false, DENIED)">test_premium(	TDT22	, 90, true, true, false, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,27 +271,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 20, false, false, false, DENIED)">test_premium(BV, 20, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TBV5, 21, false, false, false, DENIED)">test_premium(TBV5, 21, false, false, false, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TEP1, 15, true, true, true, DENIED)">test_premium(TEP1, 15, true, true, true, DENIED)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(TEP4, 90, false, false, false, DENIED)">test_premium(TEP4, 90, false, false, false, DENIED)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 21, false, false, false, DENIED)">test_premium(BV, 21, false, false, false, DENIED)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 18, false, false, false, DENIED)">test_premium(BV, 18, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT1	, 15, true, true, false, DENIED)">test_premium(	TDT1	, 15, true, true, false, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -157,22 +286,37 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 81, false, false, false, DENIED)">test_premium(BV, 81, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT13	, 19, false, false, true, DENIED)">test_premium(	TDT13	, 19, false, false, true, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, 17, false, false, false, DENIED)">test_premium(BV, 17, false, false, false, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT27	, 90, false, false, true, DENIED)">test_premium(	TDT27	, 90, false, false, true, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV1, 0, true, true, true, DENIED)">test_premium(BV1, 0, true, true, true, DENIED)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT3	, 15, true, false, false, DENIED)">test_premium(	TDT3	, 15, true, false, false, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(BV, -2147483648, false, false, false, ERROR)">test_premium(BV, -2147483648, false, false, false, ERROR)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT6	, 15, false, false, true, DENIED)">test_premium(	TDT6	, 15, false, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT2	, 15, true, false, true, DENIED)">test_premium(	TDT2	, 15, true, false, true, DENIED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT18	, 30, false, true, true, GRANTED)">test_premium(	TDT18	, 30, false, true, true, GRANTED)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="eost.LicenseTest" class="method navigator-link" hash-for-method="test_premium(	TDT11	, 19, false, true, true, DENIED)">test_premium(	TDT11	, 19, false, true, true, DENIED)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -187,6 +331,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">eost.LicenseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT8	, 19, true, true, false, GRANTED)">
+                  </a> <!-- test_premium(	TDT8	, 19, true, true, false, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT8	, 19, true, true, false, GRANTED)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT10	, 19, true, false, false, TEMPORARY)">
+                  </a> <!-- test_premium(	TDT10	, 19, true, false, false, TEMPORARY) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT10	, 19, true, false, false, TEMPORARY)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [TEMPORARY] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT15	, 30, true, true, false, GRANTED)">
+                  </a> <!-- test_premium(	TDT15	, 30, true, true, false, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT15	, 30, true, true, false, GRANTED)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT21	, 90, true, true, true, DENIED)">
+                  </a> <!-- test_premium(	TDT21	, 90, true, true, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT21	, 90, true, true, true, DENIED)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [DENIED] but found [GRANTED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT19	, 30, false, true, false, GRANTED)">
+                  </a> <!-- test_premium(	TDT19	, 30, false, true, false, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT19	, 30, false, true, false, GRANTED)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -195,26 +412,202 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, 80, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 80, false, false, false, DENIED) -->
+                  <a name="test_premium(TBV6, 80, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV6, 80, false, false, false, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 80, false, false, false, DENIED)</span>
+                  <span class="parameters">(TBV6, 80, false, false, false, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, 2147483647, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 2147483647, false, false, false, DENIED) -->
+                  <a name="test_premium(	TDT4	, 15, false, true, true, DENIED)">
+                  </a> <!-- test_premium(	TDT4	, 15, false, true, true, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 2147483647, false, false, false, DENIED)</span>
+                  <span class="parameters">(	TDT4	, 15, false, true, true, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, -1, false, false, false, ERROR)">
-                  </a> <!-- test_premium(BV, -1, false, false, false, ERROR) -->
+                  <a name="test_premium(	TDT17	, 30, true, false, false, DENIED)">
+                  </a> <!-- test_premium(	TDT17	, 30, true, false, false, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, -1, false, false, false, ERROR)</span>
+                  <span class="parameters">(	TDT17	, 30, true, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV10, -1, false, false, false, ERROR)">
+                  </a> <!-- test_premium(TBV10, -1, false, false, false, ERROR) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV10, -1, false, false, false, ERROR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT20	, 30, false, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT20	, 30, false, false, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT20	, 30, false, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV4, 20, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV4, 20, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV4, 20, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TEP1, 15, true, true, true, DENIED)">
+                  </a> <!-- test_premium(TEP1, 15, true, true, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TEP1, 15, true, true, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT23	, 90, true, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT23	, 90, true, false, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT23	, 90, true, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT24	, 90, true, false, false, DENIED)">
+                  </a> <!-- test_premium(	TDT24	, 90, true, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT24	, 90, true, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TEP4, 90, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TEP4, 90, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TEP4, 90, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV3, 18, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV3, 18, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV3, 18, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV7, 81, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV7, 81, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV7, 81, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV2, 17, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV2, 17, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV2, 17, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT5	, 15, false, true, false, DENIED)">
+                  </a> <!-- test_premium(	TDT5	, 15, false, true, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT5	, 15, false, true, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV1, 0, true, true, true, DENIED)">
+                  </a> <!-- test_premium(TBV1, 0, true, true, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV1, 0, true, true, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT7	, 19, true, true, true, GRANTED)">
+                  </a> <!-- test_premium(	TDT7	, 19, true, true, true, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT7	, 19, true, true, true, GRANTED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT9	, 19, true, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT9	, 19, true, false, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT9	, 19, true, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV9, -2147483648, false, false, false, ERROR)">
+                  </a> <!-- test_premium(TBV9, -2147483648, false, false, false, ERROR) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV9, -2147483648, false, false, false, ERROR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT25	, 90, false, true, true, DENIED)">
+                  </a> <!-- test_premium(	TDT25	, 90, false, true, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT25	, 90, false, true, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT14	, 30, true, true, true, GRANTED)">
+                  </a> <!-- test_premium(	TDT14	, 30, true, true, true, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT14	, 30, true, true, true, GRANTED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(TBV8, 2147483647, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV8, 2147483647, false, false, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(TBV8, 2147483647, false, false, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT16	, 30, true, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT16	, 30, true, false, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT16	, 30, true, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT26	, 90, false, true, false, DENIED)">
+                  </a> <!-- test_premium(	TDT26	, 90, false, true, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT26	, 90, false, true, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT12	, 19, false, true, false, DENIED)">
+                  </a> <!-- test_premium(	TDT12	, 19, false, true, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT12	, 19, false, true, false, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT22	, 90, true, true, false, DENIED)">
+                  </a> <!-- test_premium(	TDT22	, 90, true, true, false, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT22	, 90, true, true, false, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -235,42 +628,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, 20, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 20, false, false, false, DENIED) -->
+                  <a name="test_premium(TBV5, 21, false, false, false, DENIED)">
+                  </a> <!-- test_premium(TBV5, 21, false, false, false, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 20, false, false, false, DENIED)</span>
+                  <span class="parameters">(TBV5, 21, false, false, false, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(TEP1, 15, true, true, true, DENIED)">
-                  </a> <!-- test_premium(TEP1, 15, true, true, true, DENIED) -->
+                  <a name="test_premium(	TDT1	, 15, true, true, false, DENIED)">
+                  </a> <!-- test_premium(	TDT1	, 15, true, true, false, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(TEP1, 15, true, true, true, DENIED)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_premium(TEP4, 90, false, false, false, DENIED)">
-                  </a> <!-- test_premium(TEP4, 90, false, false, false, DENIED) -->
-                  <span class="method-name">test_premium</span>
-                  <span class="parameters">(TEP4, 90, false, false, false, DENIED)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_premium(BV, 21, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 21, false, false, false, DENIED) -->
-                  <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 21, false, false, false, DENIED)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_premium(BV, 18, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 18, false, false, false, DENIED) -->
-                  <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 18, false, false, false, DENIED)</span>
+                  <span class="parameters">(	TDT1	, 15, true, true, false, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -283,34 +652,58 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, 81, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 81, false, false, false, DENIED) -->
+                  <a name="test_premium(	TDT13	, 19, false, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT13	, 19, false, false, true, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 81, false, false, false, DENIED)</span>
+                  <span class="parameters">(	TDT13	, 19, false, false, true, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, 17, false, false, false, DENIED)">
-                  </a> <!-- test_premium(BV, 17, false, false, false, DENIED) -->
+                  <a name="test_premium(	TDT27	, 90, false, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT27	, 90, false, false, true, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, 17, false, false, false, DENIED)</span>
+                  <span class="parameters">(	TDT27	, 90, false, false, true, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV1, 0, true, true, true, DENIED)">
-                  </a> <!-- test_premium(BV1, 0, true, true, true, DENIED) -->
+                  <a name="test_premium(	TDT3	, 15, true, false, false, DENIED)">
+                  </a> <!-- test_premium(	TDT3	, 15, true, false, false, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV1, 0, true, true, true, DENIED)</span>
+                  <span class="parameters">(	TDT3	, 15, true, false, false, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_premium(BV, -2147483648, false, false, false, ERROR)">
-                  </a> <!-- test_premium(BV, -2147483648, false, false, false, ERROR) -->
+                  <a name="test_premium(	TDT6	, 15, false, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT6	, 15, false, false, true, DENIED) -->
                   <span class="method-name">test_premium</span>
-                  <span class="parameters">(BV, -2147483648, false, false, false, ERROR)</span>
+                  <span class="parameters">(	TDT6	, 15, false, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT2	, 15, true, false, true, DENIED)">
+                  </a> <!-- test_premium(	TDT2	, 15, true, false, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT2	, 15, true, false, true, DENIED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT18	, 30, false, true, true, GRANTED)">
+                  </a> <!-- test_premium(	TDT18	, 30, false, true, true, GRANTED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT18	, 30, false, true, true, GRANTED)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_premium(	TDT11	, 19, false, true, true, DENIED)">
+                  </a> <!-- test_premium(	TDT11	, 19, false, true, true, DENIED) -->
+                  <span class="method-name">test_premium</span>
+                  <span class="parameters">(	TDT11	, 19, false, true, true, DENIED)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -366,23 +759,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(42);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_premium')
 data.setCell(0, 2, 'eost.LicenseTest')
-data.setCell(0, 3, 31);
+data.setCell(0, 3, 23);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_premium')
 data.setCell(1, 2, 'eost.LicenseTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_premium')
 data.setCell(2, 2, 'eost.LicenseTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test_premium')
 data.setCell(3, 2, 'eost.LicenseTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test_premium')
 data.setCell(4, 2, 'eost.LicenseTest')
@@ -427,11 +820,119 @@ data.setCell(14, 0, 14)
 data.setCell(14, 1, 'test_premium')
 data.setCell(14, 2, 'eost.LicenseTest')
 data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_premium')
+data.setCell(15, 2, 'eost.LicenseTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_premium')
+data.setCell(16, 2, 'eost.LicenseTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_premium')
+data.setCell(17, 2, 'eost.LicenseTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_premium')
+data.setCell(18, 2, 'eost.LicenseTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_premium')
+data.setCell(19, 2, 'eost.LicenseTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test_premium')
+data.setCell(20, 2, 'eost.LicenseTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test_premium')
+data.setCell(21, 2, 'eost.LicenseTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test_premium')
+data.setCell(22, 2, 'eost.LicenseTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test_premium')
+data.setCell(23, 2, 'eost.LicenseTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test_premium')
+data.setCell(24, 2, 'eost.LicenseTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test_premium')
+data.setCell(25, 2, 'eost.LicenseTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test_premium')
+data.setCell(26, 2, 'eost.LicenseTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test_premium')
+data.setCell(27, 2, 'eost.LicenseTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test_premium')
+data.setCell(28, 2, 'eost.LicenseTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'test_premium')
+data.setCell(29, 2, 'eost.LicenseTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'test_premium')
+data.setCell(30, 2, 'eost.LicenseTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'test_premium')
+data.setCell(31, 2, 'eost.LicenseTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test_premium')
+data.setCell(32, 2, 'eost.LicenseTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'test_premium')
+data.setCell(33, 2, 'eost.LicenseTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'test_premium')
+data.setCell(34, 2, 'eost.LicenseTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'test_premium')
+data.setCell(35, 2, 'eost.LicenseTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test_premium')
+data.setCell(36, 2, 'eost.LicenseTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'test_premium')
+data.setCell(37, 2, 'eost.LicenseTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test_premium')
+data.setCell(38, 2, 'eost.LicenseTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'test_premium')
+data.setCell(39, 2, 'eost.LicenseTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'test_premium')
+data.setCell(40, 2, 'eost.LicenseTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'test_premium')
+data.setCell(41, 2, 'eost.LicenseTest')
+data.setCell(41, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 ms</span>
+              <span class="suite-total-time">Total running time: 26 ms</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -464,59 +965,177 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_premium(TEP2, 19, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_premium(TEP3, 30, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_premium(TEP4, 90, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_premium(TEP5, -10, false, false, false, ERROR)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV1, 0, true, true, true, DENIED)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV2, 17, false, false, false, DENIED)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV3, 18, false, false, false, DENIED)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV4, 20, false, false, false, DENIED)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV5, 21, false, false, false, DENIED)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV6, 80, false, false, false, DENIED)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV7, 81, false, false, false, DENIED)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV8, 2147483647, false, false, false, DENIED)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV9, -2147483648, false, false, false, ERROR)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(TBV10, -1, false, false, false, ERROR)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT1	, 15, true, true, false, DENIED)</span>
                 <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV1, 0, true, true, true, DENIED)</span>
+                <span class="method-name">test_premium(	TDT2	, 15, true, false, true, DENIED)</span>
                 <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 17, false, false, false, DENIED)</span>
+                <span class="method-name">test_premium(	TDT3	, 15, true, false, false, DENIED)</span>
                 <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 18, false, false, false, DENIED)</span>
+                <span class="method-name">test_premium(	TDT4	, 15, false, true, true, DENIED)</span>
                 <span class="method-start">31 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 20, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">test_premium(	TDT5	, 15, false, true, false, DENIED)</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 21, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">test_premium(	TDT6	, 15, false, false, true, DENIED)</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 80, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">test_premium(	TDT7	, 19, true, true, true, GRANTED)</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 81, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_premium(	TDT8	, 19, true, true, false, GRANTED)</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, 2147483647, false, false, false, DENIED)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">test_premium(	TDT9	, 19, true, false, true, DENIED)</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, -2147483648, false, false, false, ERROR)</span>
-                <span class="method-start">31 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_premium(	TDT10	, 19, true, false, false, TEMPORARY)</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_premium(BV, -1, false, false, false, ERROR)</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">test_premium(	TDT11	, 19, false, true, true, DENIED)</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT12	, 19, false, true, false, DENIED)</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT13	, 19, false, false, true, DENIED)</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT14	, 30, true, true, true, GRANTED)</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_premium(	TDT15	, 30, true, true, false, GRANTED)</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT16	, 30, true, false, true, DENIED)</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT17	, 30, true, false, false, DENIED)</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT18	, 30, false, true, true, GRANTED)</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_premium(	TDT19	, 30, false, true, false, GRANTED)</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT20	, 30, false, false, true, DENIED)</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_premium(	TDT21	, 90, true, true, true, DENIED)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT22	, 90, true, true, false, DENIED)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT23	, 90, true, false, true, DENIED)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT24	, 90, true, false, false, DENIED)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT25	, 90, false, true, true, DENIED)</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT26	, 90, false, true, false, DENIED)</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_premium(	TDT27	, 90, false, false, true, DENIED)</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

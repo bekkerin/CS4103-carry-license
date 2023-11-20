@@ -34,13 +34,13 @@ public class License {
 	{
 		Status rv = DENIED; 
 
-        if (age >= 21 && ( no_criminal  && trained ) )
+        if (age >= 21 && age < 81 && ( no_criminal  && trained ) )
             rv = GRANTED;
-        else if (  no_criminal )
+        else if (  no_criminal && trained )
             if (military  && age >= 18)
                 rv = GRANTED;
-            else if (!trained)
-                rv = TEMPORARY;
+            //else if (!trained)
+                //rv = TEMPORARY;
             else
                 rv = DENIED;
         else if (age < 21)
@@ -48,6 +48,8 @@ public class License {
                 rv = ERROR;
             else
                 rv = DENIED;
+        else if (age >= 81)
+            rv = DENIED;
 
 		
                 

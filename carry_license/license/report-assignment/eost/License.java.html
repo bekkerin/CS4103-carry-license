@@ -34,13 +34,13 @@ import javax.lang.model.util.ElementScanner6;
 	{
 <span class="fc" id="L35">		Status rv = DENIED; </span>
 
-<span class="pc bpc" id="L37" title="3 of 6 branches missed.">        if (age &gt;= 21 &amp;&amp; ( no_criminal  &amp;&amp; trained ) )</span>
-<span class="nc" id="L38">            rv = GRANTED;</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        else if (  no_criminal )</span>
-<span class="pc bpc" id="L40" title="2 of 4 branches missed.">            if (military  &amp;&amp; age &gt;= 18)</span>
-<span class="nc" id="L41">                rv = GRANTED;</span>
-<span class="pc bpc" id="L42" title="1 of 2 branches missed.">            else if (!trained)</span>
-<span class="nc" id="L43">                rv = TEMPORARY;</span>
+<span class="fc bfc" id="L37" title="All 8 branches covered.">        if (age &gt;= 21 &amp;&amp; age &lt; 81 &amp;&amp; ( no_criminal  &amp;&amp; trained ) )</span>
+<span class="fc" id="L38">            rv = GRANTED;</span>
+<span class="fc bfc" id="L39" title="All 4 branches covered.">        else if (  no_criminal &amp;&amp; trained )</span>
+<span class="fc bfc" id="L40" title="All 4 branches covered.">            if (military  &amp;&amp; age &gt;= 18)</span>
+<span class="fc" id="L41">                rv = GRANTED;</span>
+            //else if (!trained)
+                //rv = TEMPORARY;
             else
 <span class="fc" id="L45">                rv = DENIED;</span>
 <span class="fc bfc" id="L46" title="All 2 branches covered.">        else if (age &lt; 21)</span>
@@ -48,10 +48,12 @@ import javax.lang.model.util.ElementScanner6;
 <span class="fc" id="L48">                rv = ERROR;</span>
             else
 <span class="fc" id="L50">                rv = DENIED;</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        else if (age &gt;= 81)</span>
+<span class="fc" id="L52">            rv = DENIED;</span>
 
 		
                 
-<span class="fc" id="L54">		return rv;</span>
+<span class="fc" id="L56">		return rv;</span>
 	}
 
 }

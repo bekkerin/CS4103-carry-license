@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 20 12:12:47 CST 2023</td>
+<td>Started on:</td><td>Mon Nov 20 14:46:59 CST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (95 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (106 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,214 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT8	, 19, true, true, false, GRANTED</td>
+<td><div><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431570856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431570856'><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestNG.privateMain(TestNG.java:1336)
+	at org.testng.TestNG.main(TestNG.java:1304)
+</pre></div></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT10	, 19, true, false, false, TEMPORARY</td>
+<td><div><pre>java.lang.AssertionError: expected [TEMPORARY] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace520162288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace520162288'><pre>java.lang.AssertionError: expected [TEMPORARY] but found [DENIED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestNG.privateMain(TestNG.java:1336)
+	at org.testng.TestNG.main(TestNG.java:1304)
+</pre></div></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT15	, 30, true, true, false, GRANTED</td>
+<td><div><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace393996856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace393996856'><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestNG.privateMain(TestNG.java:1336)
+	at org.testng.TestNG.main(TestNG.java:1304)
+</pre></div></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT19	, 30, false, true, false, GRANTED</td>
+<td><div><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1859383896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1859383896'><pre>java.lang.AssertionError: expected [GRANTED] but found [DENIED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestNG.privateMain(TestNG.java:1336)
+	at org.testng.TestNG.main(TestNG.java:1304)
+</pre></div></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT21	, 90, true, true, true, DENIED</td>
+<td><div><pre>java.lang.AssertionError: expected [DENIED] but found [GRANTED]
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816798571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816798571'><pre>java.lang.AssertionError: expected [DENIED] but found [GRANTED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at eost.LicenseTest.test_premium(LicenseTest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestNG.privateMain(TestNG.java:1336)
+	at org.testng.TestNG.main(TestNG.java:1304)
+</pre></div></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -100,52 +308,162 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV1, 0, true, true, true, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV1, 0, true, true, true, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 17, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV2, 17, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 18, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV3, 18, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 20, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV4, 20, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 21, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV5, 21, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 80, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV6, 80, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 81, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV7, 81, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, 2147483647, false, false, false, DENIED</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV8, 2147483647, false, false, false, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, -2147483648, false, false, false, ERROR</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV9, -2147483648, false, false, false, ERROR</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
 <tr>
-<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: BV, -1, false, false, false, ERROR</td>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: TBV10, -1, false, false, false, ERROR</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT1	, 15, true, true, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT2	, 15, true, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT3	, 15, true, false, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT4	, 15, false, true, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT5	, 15, false, true, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT6	, 15, false, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT7	, 19, true, true, true, GRANTED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT9	, 19, true, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT11	, 19, false, true, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT12	, 19, false, true, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT13	, 19, false, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT14	, 30, true, true, true, GRANTED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT16	, 30, true, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT17	, 30, true, false, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT18	, 30, false, true, true, GRANTED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT20	, 30, false, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT22	, 90, true, true, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT23	, 90, true, false, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT24	, 90, true, false, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT25	, 90, false, true, true, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT26	, 90, false, true, false, DENIED</td>
+<td></td>
+<td>0</td>
+<td>eost.LicenseTest@6933b6c6</td></tr>
+<tr>
+<td title='eost.LicenseTest.test_premium()'><b>test_premium</b><br>Test class: eost.LicenseTest<br>Parameters: 	TDT27	, 90, false, false, true, DENIED</td>
 <td></td>
 <td>0</td>
 <td>eost.LicenseTest@6933b6c6</td></tr>
