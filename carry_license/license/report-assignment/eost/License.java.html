@@ -32,7 +32,7 @@ import javax.lang.model.util.ElementScanner6;
 
 	public static Status Decide(int age, boolean military,  boolean no_criminal, boolean trained)
 	{
-<span class="fc" id="L35">		Status rv = DENIED; // assume information is incomplete or data is invalid</span>
+<span class="fc" id="L35">		Status rv = DENIED; </span>
 
 <span class="pc bpc" id="L37" title="3 of 6 branches missed.">        if (age &gt;= 21 &amp;&amp; ( no_criminal  &amp;&amp; trained ) )</span>
 <span class="nc" id="L38">            rv = GRANTED;</span>

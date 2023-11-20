@@ -21,6 +21,17 @@ public class LicenseTest {
         { "TEP4", 90, false,   false,false, Status.DENIED },
         { "TEP5", -10, false,   false,false, Status.ERROR },
 
+        { "BV1", 0, true,   true,true, Status.DENIED },
+        { "BV", 17, false,   false,false, Status.DENIED },
+        { "BV", 18, false,   false,false, Status.DENIED },
+        { "BV", 20,false,   false,false, Status.DENIED },
+        { "BV", 21, false,   false,false, Status.DENIED },
+        { "BV", 80, false,   false,false, Status.DENIED },
+        { "BV", 81, false,   false,false, Status.DENIED },
+        { "BV", Integer.MAX_VALUE, false,   false,false, Status.DENIED },
+        { "BV", Integer.MIN_VALUE, false,   false,false, Status.ERROR },
+        { "BV", -1, false,   false,false, Status.ERROR },
+
 
    };
 
