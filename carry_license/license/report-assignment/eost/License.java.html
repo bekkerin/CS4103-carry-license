@@ -2,29 +2,24 @@
 
 import static eost.License.Decide;
 import static eost.License.Status.DENIED;
+import static eost.License.Status.ERROR;
 import static eost.License.Status.GRANTED;
 import static eost.License.Status.TEMPORARY;
 
 import javax.lang.model.util.ElementScanner6;
 
-<span class="nc" id="L10">public class License {</span>
+<span class="nc" id="L11">public class License {</span>
 
-<span class="fc" id="L12">	public static enum Status { GRANTED, DENIED, TEMPORARY};</span>
+<span class="fc" id="L13">	public static enum Status { GRANTED, DENIED, TEMPORARY, ERROR};</span>
 
 	/**
 	 * Determine whether someone gets a license to carry concealed based on several factors.
-     * Age: Must be at least 21 years old (or at least 18 years old and a member of the military or honorably discharged veteran). Applicants over 80 years old do not qualify.
-     * Citizenship: Must be a citizen of the United States
-     * Residency: Must be a resident of the state issuing the license or a member of the military stationed in the state
-     * Mental Health: Must not have been adjudicated incompetent or have a history of mental illness that would make it unsafe to carry a firearm. 
+     * Age: Must be at least 21 years old (or at least 18 years old and a member of the military or honorably discharged veteran). Applicants over 80 years old do not qualify and are denied. Negative ages result in an error.
      * Criminal History: Must not have a felony conviction or be subject to an outstanding felony warrant
      * Training: completed a firearms safety training course. If they have not, they can get a temporary license for 90 days to complete the course.
 	 *
 	 * @param age integer
      * @param military boolean 
-	 * @param citizen boolean
-     * @param resident boolean
-     * @param no_mental boolean
      * @param no_criminal boolean
      * @param trained boolean
 	 *
@@ -32,25 +27,31 @@ import javax.lang.model.util.ElementScanner6;
 	 * GRANTED - all conditions are met. license is granted for five years
      * DENIED - at least one disqualifying condition. license is denied
      * TEMPORARY - licensed for up to 90 days after which the license is either granted or denied
+     * ERROR - for incomplete information or incorrect data
 	 */
 
-	public static Status Decide(int age, boolean military,boolean citizen, boolean resident, boolean no_mental, boolean no_criminal, boolean trained)
+	public static Status Decide(int age, boolean military,  boolean no_criminal, boolean trained)
 	{
-<span class="fc" id="L39">		Status rv = DENIED ;</span>
+<span class="fc" id="L35">		Status rv = DENIED; // assume information is incomplete or data is invalid</span>
 
-<span class="pc bpc" id="L41" title="6 of 12 branches missed.">        if (age &gt;= 21 &amp;&amp; no_mental &amp;&amp; (citizen &amp;&amp; resident  &amp;&amp; no_criminal  &amp;&amp; trained ) )</span>
-<span class="fc" id="L42">            rv = GRANTED;</span>
-<span class="nc bnc" id="L43" title="All 8 branches missed.">        else if (citizen &amp;&amp; resident  &amp;&amp; no_mental &amp;&amp; no_criminal )</span>
-<span class="nc bnc" id="L44" title="All 4 branches missed.">            if (military  &amp;&amp; age &gt;= 18)</span>
-<span class="nc" id="L45">                rv = GRANTED;</span>
-<span class="nc bnc" id="L46" title="All 2 branches missed.">            else if (!trained)</span>
-<span class="nc" id="L47">                rv = TEMPORARY;</span>
+<span class="pc bpc" id="L37" title="3 of 6 branches missed.">        if (age &gt;= 21 &amp;&amp; ( no_criminal  &amp;&amp; trained ) )</span>
+<span class="nc" id="L38">            rv = GRANTED;</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        else if (  no_criminal )</span>
+<span class="pc bpc" id="L40" title="2 of 4 branches missed.">            if (military  &amp;&amp; age &gt;= 18)</span>
+<span class="nc" id="L41">                rv = GRANTED;</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">            else if (!trained)</span>
+<span class="nc" id="L43">                rv = TEMPORARY;</span>
             else
-<span class="nc" id="L49">                rv = DENIED;</span>
+<span class="fc" id="L45">                rv = DENIED;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        else if (age &lt; 21)</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">            if (age &lt; 0)</span>
+<span class="fc" id="L48">                rv = ERROR;</span>
+            else
+<span class="fc" id="L50">                rv = DENIED;</span>
 
 		
                 
-<span class="fc" id="L53">		return rv;</span>
+<span class="fc" id="L54">		return rv;</span>
 	}
 
 }

@@ -14,8 +14,12 @@ public class LicenseTest {
 
    // EP test data followed by BVA test data and then by DT test data and then by the BC test data
    private static Object[][] testData1 = new Object[][] {
-      //  test age   military citizen     resident    no_mental   no_criminal     trained
-        { "test name", 30, true,true, true, true, true,true, Status.GRANTED },
+      //  test age   military        no_criminal     trained
+        { "TEP1", 15, true,   true,true, Status.DENIED },
+        { "TEP2", 19, false,   false,false, Status.DENIED },
+        { "TEP3", 30, false,   false,false, Status.DENIED },
+        { "TEP4", 90, false,   false,false, Status.DENIED },
+        { "TEP5", -10, false,   false,false, Status.ERROR },
 
 
    };
@@ -28,9 +32,9 @@ public class LicenseTest {
 
     // Method to execute the EP tests
     @Test(dataProvider="dataset1")
-    public void test_premium(String id, int age, boolean military,boolean citizen, boolean resident, boolean no_mental, boolean no_criminal, boolean trained, Status expected)
+    public void test_premium(String id, int age, boolean military,  boolean no_criminal, boolean trained, Status expected)
     {
-       assertEquals( License.Decide( age, military, citizen, resident,no_mental,no_criminal, trained ), expected );
+       assertEquals( License.Decide( age, military,  no_criminal, trained ), expected );
     }
 
 }

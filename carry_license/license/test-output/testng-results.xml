@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-19T19:51:00 CST" name="Command line suite" finished-at="2023-11-19T19:51:00 CST" duration-ms="64">
+  <suite started-at="2023-11-20T11:05:59 CST" name="Command line suite" finished-at="2023-11-20T11:05:59 CST" duration-ms="74">
     <groups>
     </groups>
-    <test started-at="2023-11-19T19:51:00 CST" name="Command line test" finished-at="2023-11-19T19:51:00 CST" duration-ms="64">
+    <test started-at="2023-11-20T11:05:59 CST" name="Command line test" finished-at="2023-11-20T11:05:59 CST" duration-ms="74">
       <class name="eost.LicenseTest">
-        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@7dfb0c0f]" started-at="2023-11-19T19:51:00 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-19T19:51:00 CST" duration-ms="17" status="PASS">
+        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@626abbd0]" started-at="2023-11-20T11:05:59 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-20T11:05:59 CST" duration-ms="20" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test name]]>
+                <![CDATA[TEP1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[30]]>
+                <![CDATA[15]]>
               </value>
             </param>
             <param index="2">
@@ -36,22 +36,151 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[true]]>
+                <![CDATA[DENIED]]>
               </value>
             </param>
-            <param index="6">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_premium -->
+        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@626abbd0]" started-at="2023-11-20T11:05:59 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-20T11:05:59 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[true]]>
+                <![CDATA[TEP3]]>
               </value>
             </param>
-            <param index="7">
+            <param index="1">
               <value>
-                <![CDATA[true]]>
+                <![CDATA[30]]>
               </value>
             </param>
-            <param index="8">
+            <param index="2">
               <value>
-                <![CDATA[GRANTED]]>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DENIED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_premium -->
+        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@626abbd0]" started-at="2023-11-20T11:05:59 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-20T11:05:59 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEP2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DENIED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_premium -->
+        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@626abbd0]" started-at="2023-11-20T11:05:59 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-20T11:05:59 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEP5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_premium -->
+        <test-method signature="test_premium(java.lang.String, int, boolean, boolean, boolean, eost.License$Status)[pri:0, instance:eost.LicenseTest@626abbd0]" started-at="2023-11-20T11:05:59 CST" name="test_premium" data-provider="dataset1" finished-at="2023-11-20T11:05:59 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TEP4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DENIED]]>
               </value>
             </param>
           </params>
