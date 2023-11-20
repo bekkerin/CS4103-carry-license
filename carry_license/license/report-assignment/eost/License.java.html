@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>License.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">eost</a> &gt; <span class="el_source">License.java</span></div><h1>License.java</h1><pre class="source lang-java linenums">package eost;
+
+import static eost.License.Decide;
+import static eost.License.Status.DENIED;
+import static eost.License.Status.GRANTED;
+import static eost.License.Status.TEMPORARY;
+
+import javax.lang.model.util.ElementScanner6;
+
+<span class="nc" id="L10">public class License {</span>
+
+<span class="fc" id="L12">	public static enum Status { GRANTED, DENIED, TEMPORARY};</span>
+
+	/**
+	 * Determine whether someone gets a license to carry concealed based on several factors.
+     * Age: Must be at least 21 years old (or at least 18 years old and a member of the military or honorably discharged veteran). Applicants over 80 years old do not qualify.
+     * Citizenship: Must be a citizen of the United States
+     * Residency: Must be a resident of the state issuing the license or a member of the military stationed in the state
+     * Mental Health: Must not have been adjudicated incompetent or have a history of mental illness that would make it unsafe to carry a firearm. 
+     * Criminal History: Must not have a felony conviction or be subject to an outstanding felony warrant
+     * Training: completed a firearms safety training course. If they have not, they can get a temporary license for 90 days to complete the course.
+	 *
+	 * @param age integer
+     * @param military boolean 
+	 * @param citizen boolean
+     * @param resident boolean
+     * @param no_mental boolean
+     * @param no_criminal boolean
+     * @param trained boolean
+	 *
+	 * @return
+	 * GRANTED - all conditions are met. license is granted for five years
+     * DENIED - at least one disqualifying condition. license is denied
+     * TEMPORARY - licensed for up to 90 days after which the license is either granted or denied
+	 */
+
+	public static Status Decide(int age, boolean military,boolean citizen, boolean resident, boolean no_mental, boolean no_criminal, boolean trained)
+	{
+<span class="fc" id="L39">		Status rv = DENIED ;</span>
+
+<span class="pc bpc" id="L41" title="6 of 12 branches missed.">        if (age &gt;= 21 &amp;&amp; no_mental &amp;&amp; (citizen &amp;&amp; resident  &amp;&amp; no_criminal  &amp;&amp; trained ) )</span>
+<span class="fc" id="L42">            rv = GRANTED;</span>
+<span class="nc bnc" id="L43" title="All 8 branches missed.">        else if (citizen &amp;&amp; resident  &amp;&amp; no_mental &amp;&amp; no_criminal )</span>
+<span class="nc bnc" id="L44" title="All 4 branches missed.">            if (military  &amp;&amp; age &gt;= 18)</span>
+<span class="nc" id="L45">                rv = GRANTED;</span>
+<span class="nc bnc" id="L46" title="All 2 branches missed.">            else if (!trained)</span>
+<span class="nc" id="L47">                rv = TEMPORARY;</span>
+            else
+<span class="nc" id="L49">                rv = DENIED;</span>
+
+		
+                
+<span class="fc" id="L53">		return rv;</span>
+	}
+
+}
+
+// Copyright 2021, Stephen Brown
+// MIT License - see license.txt
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

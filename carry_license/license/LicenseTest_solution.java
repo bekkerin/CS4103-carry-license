@@ -6,10 +6,10 @@ package eost;
 import static org.testng.Assert.*;
 import org.testng.annotations.*;
 
-import eost.Grades;
-import eost.Grades.LetterGrade;
-import eost.Grades.LetterGrade;
-import static eost.Grades.LetterGrade.*;
+import eost.License;
+import eost.License.LetterGrade;
+import eost.License.LetterGrade;
+import static eost.License.LetterGrade.*;
 
 public class GradesTest {
 
@@ -56,7 +56,7 @@ public class GradesTest {
     @Test(dataProvider="dataset1")
     public void test_premium( String id, long points, boolean perfect, LetterGrade expected)
     {
-       assertEquals( Grades.calculate( points, perfect ), expected );
+       assertEquals( License.calculate( points, perfect ), expected );
     }
 
 }
