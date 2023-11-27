@@ -6,7 +6,7 @@ import static eost.License.Status.ERROR;
 import static eost.License.Status.GRANTED;
 import static eost.License.Status.TEMPORARY;
 
-import javax.lang.model.util.ElementScanner6;
+//import javax.lang.model.util.ElementScanner6;
 
 public class License {
 
@@ -15,7 +15,7 @@ public class License {
 	/**
 	 * Determine whether someone gets a license to carry concealed based on several factors.
      * Age: Must be at least 21 years old (or at least 18 years old and a member of the military or honorably discharged veteran). Applicants over 80 years old do not qualify and are denied. Negative ages result in an error.
-     * Criminal History: Must not have a felony conviction or be subject to an outstanding felony warrant
+     * Criminal History: Must not have a felony conviction or be subject to an outstanding felony warrant. Even military do not get a license if they are f
      * Training: completed a firearms safety training course. If they have not, they can get a temporary license for 90 days to complete the course.
 	 *
 	 * @param age integer
@@ -34,24 +34,28 @@ public class License {
 	{
 		Status rv = DENIED; 
 
-        if (age >= 21 && age < 81 && ( no_criminal  && trained ) )
-            rv = GRANTED;
-        else if (  no_criminal && trained )
-            if (military  && age >= 18)
-                rv = GRANTED;
-            //else if (!trained)
-                //rv = TEMPORARY;
+        if (age >0) // boundary value set incorrectly
+        {
+            if( age <18 || age > 80)
+                rv = DENIED;
+            else if (age <21 && military) 
+                if(no_criminal)
+                    rv = GRANTED;
+                else 
+                    rv = DENIED;
+            else if (age >=21 && no_criminal)
+                if (trained && age == 25 && !military)
+                    rv = GRANTED;
+                else if (trained)
+                    rv = GRANTED;
+                else
+                    rv = TEMPORARY; 
             else
                 rv = DENIED;
-        else if (age < 21)
-            if (age < 0)
-                rv = ERROR;
-            else
-                rv = DENIED;
-        else if (age >= 81)
-            rv = DENIED;
-
-		
+        }
+        else
+            rv = ERROR;
+        
                 
 		return rv;
 	}
